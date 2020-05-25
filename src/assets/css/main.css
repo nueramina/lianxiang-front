@@ -175,3 +175,21 @@ a {
 .v-note-wrapper .v-note-panel {
     min-height: 500px;
 }
+
+.search-content{
+    display: flex;
+    margin-left: 35px;
+}
+.search-content  .el-input__inner{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.search-content .el-button--mini, .search-content .el-button--small{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: #43be7b;
+    border-color: #43be7b;
+}
+.flex1{
+    flex: 1;
+}

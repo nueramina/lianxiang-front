@@ -3,24 +3,25 @@
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item>
-                    <i class="el-icon-lx-cascades"></i> 基础表格
+                    <i class="el-icon-lx-cascades"></i> 基础表格1
                 </el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="container">
             <div class="handle-box">
-                <el-button
-                    type="primary"
-                    icon="el-icon-delete"
-                    class="handle-del mr10"
-                    @click="delAllSelection"
-                >批量删除</el-button>
-                <el-select v-model="query.address" placeholder="地址" class="handle-select mr10">
+                <div class="page-nav"><span>录入</span> <span class="fenge-span"><</span><span>重启录入</span></div>
+                <div class="search-content flex1">
+                    <el-input v-model="query.name" placeholder="输入查找工作簿名称" class="handle-input flex1"></el-input>
+                    <el-button type="primary" icon="el-icon-search" @click="handleSearch">搜索</el-button>
+
+                </div>
+
+                <el-button class="ml20 back-48ad2d" type="primary" icon="el-icon-search" @click="handleSearch">创建新工作簿</el-button>
+
+                <el-select v-model="query.address" placeholder="2020-05-12" class="handle-select ml20">
                     <el-option key="1" label="广东省" value="广东省"></el-option>
                     <el-option key="2" label="湖南省" value="湖南省"></el-option>
                 </el-select>
-                <el-input v-model="query.name" placeholder="用户名" class="handle-input mr10"></el-input>
-                <el-button type="primary" icon="el-icon-search" @click="handleSearch">搜索</el-button>
             </div>
             <el-table
                 :data="tableData"
@@ -216,4 +217,25 @@ export default {
     width: 40px;
     height: 40px;
 }
+.handle-box{
+    display: flex;
+    justify-content: space-between;
+}
+.page-nav span{
+    font-size: 16px;
+    color: #43be7b;
+    line-height: 32px;
+}
+.page-nav span.fenge-span{
+    margin: 0 10px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.ml20{
+    margin-left: 20px;
+}
+    .back-48ad2d{
+        background: #48ad2d;
+    }
 </style>
