@@ -193,3 +193,39 @@ a {
 .flex1{
     flex: 1;
 }
+.list-table{
+    color: #9a9a9a !important;
+}
+.list-table td{
+    border-bottom: none !important;
+}
+.list-table th{
+    background: #43be7b !important;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+.list-table thead tr th:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.list-table thead tr th:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.option-btn{
+    font-size: 14px;
+    color: #fff;
+    padding: 1px 8px;
+    background: #20609b;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td{
+    background: #f6f6f6 !important;
+}
+.container{
+    border: none;
+}
