@@ -70,10 +70,14 @@ export default {
                     subs: [
                         {
                             index: 'dashboard',
+                            title: 'dashboard'
+                        },
+                        {
+                            index: 'first-entry',
                             title: '首次录入'
                         },
                         {
-                            index: 'table',
+                            index: 'restart-entry',
                             title: '重启录入'
                         },
                         {
