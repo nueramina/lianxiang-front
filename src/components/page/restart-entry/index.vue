@@ -3,7 +3,7 @@
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item>
-                    <i class="el-icon-lx-cascades"></i> 基础表格1
+                    <i class="el-icon-lx-cascades"></i> 重启录入
                 </el-breadcrumb-item>
             </el-breadcrumb>
         </div>
@@ -16,7 +16,7 @@
 
                 </div>
 
-                <el-button class="ml20 back-48ad2d" type="primary" icon="el-icon-search" @click="handleSearch">创建新工作簿</el-button>
+                <el-button class="ml20 radius-btn" type="primary" icon="el-icon-search" @click="handleSearch">创建新工作簿</el-button>
 
                 <el-select v-model="query.address" placeholder="2020-05-12" class="handle-select ml20">
                     <el-option key="1" label="广东省" value="广东省"></el-option>
@@ -95,7 +95,7 @@
 </template>
 
 <script>
-import { fetchData } from '../../api/index';
+import { fetchData } from '../../../api/index';
 export default {
     name: 'basetable',
     data() {
@@ -210,21 +210,17 @@ export default {
     display: flex;
     justify-content: space-between;
 }
-.page-nav span{
-    font-size: 16px;
-    color: #43be7b;
-    line-height: 32px;
-}
-.page-nav span.fenge-span{
-    margin: 0 10px;
-}
+
 .ml10{
     margin-left: 10px;
 }
 .ml20{
     margin-left: 20px;
 }
-    .back-48ad2d{
-        background: #48ad2d;
-    }
+.radius-btn{
+    background: #48ad2d;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
 </style>

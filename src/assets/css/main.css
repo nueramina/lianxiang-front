@@ -193,3 +193,120 @@ a {
 .flex1{
     flex: 1;
 }
+.list-table{
+    color: #9a9a9a !important;
+}
+.list-table td{
+    border-bottom: none !important;
+}
+.list-table th{
+    background: #43be7b !important;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+.list-table thead tr th:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.list-table thead tr th:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.option-btn{
+    font-size: 14px;
+    color: #fff;
+    padding: 1px 8px;
+    background: #20609b;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.back-color-35ac6b{
+    background: #35ac6b;
+}
+.back-color-209b9a{
+    background: #209b9a;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td{
+    background: #f6f6f6 !important;
+}
+.container{
+    border: none;
+}
+.el-table--small td {
+    padding: 15px 0 !important;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.page-nav span{
+    font-size: 16px;
+    color: #43be7b;
+    line-height: 32px;
+}
+.page-nav span.fenge-span{
+    margin: 0 10px;
+}
+
+.page-form-container{
+    width: 900px;
+    margin: 0 auto;
+}
+.page-form-container .el-input{
+    width: 300px
+}
+.w300{
+    width: 300px !important;
+}
+.page-form-container .tip{
+   color: #909090;
+    font-size: 14px;
+    display: inline-block;
+}
+.page-form-container .tip span{
+    color: red;
+    margin: 0 8px;
+}
+.submit-btn{
+    padding: 6px 10px !important;
+    color: #fff !important;
+
+}
+.submit-btn span{
+    font-size: 16px;
+}
+.sure-btn{
+    background: #35ac6b !important;
+}
+.cancel-btn{
+    background: #20609b !important;
+}
+.text-align-center{
+    text-align: center;
+}
+.submit-content{
+    text-align: center;
+    margin-top: 30px;
+}
+.page-form-container .el-form-item__label{
+    color: #9a9a9a;
+    font-size: 16px;
+}
+.page-title{
+    height: 40px;
+    background: #43be7b;
+    -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.handle-box button{
+    height: 32px;
+}

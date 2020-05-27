@@ -101,7 +101,17 @@ export default new Router({
                     path: '/donate',
                     component: () => import(/* webpackChunkName: "donate" */ '../components/page/Donate.vue'),
                     meta: { title: '支持作者' }
-                }
+                },
+                {
+                    path: '/first-entry',
+                    component: () => import(/* webpackChunkName: "table" */ '../components/page/first-entry/index.vue'),
+                    meta: { title: '首次录入' }
+                },
+                {
+                    path: '/restart-entry',
+                    component: () => import(/* webpackChunkName: "table" */ '../components/page/restart-entry/index.vue'),
+                    meta: { title: '重启录入' }
+                },
             ]
         },
         {
